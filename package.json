@@ -1,0 +1,21 @@
+{
+  "name": "@apostrophecms/vue-material-design-icons",
+  "version": "1.0.0",
+  "description": "Apostrophe material design icons",
+  "main": "build.js",
+  "scripts": {
+    "prebuild": "rm -rf dist/",
+    "build": "./build.js",
+    "postbuild": "cp styles.css package.json README.md dist/"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@mdi/js": "^5.9.55",
+    "eslint-config-apostrophe": "^4.3.0",
+    "p-map": "^4.0.0"
+  }
+}
