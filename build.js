@@ -10,17 +10,21 @@ const dist = path.resolve(__dirname, 'dist');
 
 function renderTemplate(title, svgPathData, name) {
   return `<template>
-  <span v-bind="$attrs"
-        :aria-hidden="title ? null : true"
-        :aria-label="title"
-        class="material-design-icon ${title}-icon"
-        role="img"
-        @click="$emit('click', $event)">
-    <svg :fill="fillColor"
-         class="material-design-icon__svg"
-         :width="size"
-         :height="size"
-         viewBox="0 0 24 24">
+  <span
+    v-bind="$attrs"
+    :aria-hidden="title ? null : true"
+    :aria-label="title"
+    class="material-design-icon ${title}-icon"
+    role="img"
+    @click="$emit('click', $event)"
+  >
+    <svg
+      :fill="fillColor"
+      class="material-design-icon__svg"
+      :width="size"
+      :height="size"
+      viewBox="0 0 24 24"
+    >
       <path d="${svgPathData}">
         <title v-if="title">{{ title }}</title>
       </path>
@@ -30,22 +34,23 @@ function renderTemplate(title, svgPathData, name) {
 
 <script>
 export default {
-  name: "${name}Icon",
-  emits: ['click'],
+  name: '${name}Icon',
   props: {
     title: {
       type: String,
+      default: null
     },
     fillColor: {
       type: String,
-      default: "currentColor"
+      default: 'currentColor'
     },
     size: {
       type: Number,
       default: 24
     }
-  }
-}
+  },
+  emits: [ 'click' ]
+};
 </script>`;
 }
 
