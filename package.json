@@ -6,7 +6,8 @@
   "scripts": {
     "prebuild": "rm -rf dist/",
     "build": "./build.js",
-    "postbuild": "cp styles.css package.json README.md dist/"
+    "postbuild": "cp styles.css package.json README.md dist/",
+    "test": "eslint ."
   },
   "engines": {
     "node": ">=16.0.0"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@mdi/js": "^5.9.55",
     "eslint-config-apostrophe": "^4.3.0",
+    "eslint-plugin-vue": "^9.22.0",
     "p-map": "^4.0.0"
   }
 }
