@@ -12,8 +12,12 @@
   "engines": {
     "node": ">=16.0.0"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:apostrophecms/vue-material-design-icons.git"
+  },
+  "author": "Apostrophe Technologies, Inc.",
+  "license": "MIT",
   "devDependencies": {
     "@mdi/js": "^5.9.55",
     "eslint-config-apostrophe": "^4.3.0",
