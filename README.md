@@ -73,6 +73,17 @@ import '@apostrophecms/vue-material-design-icons/styles.css';
   <CheckIcon fillColor="#FF0000" />
   ```
 
+- `strokeColor` - This property allows you to set the strole colour of an icon via
+  JS instead of requiring CSS changes. Note that any CSS values, such as
+  `stroke: currentColor;` provided by the optional CSS file, may override colours
+  set with this prop.
+
+  Example:
+
+  ```html
+  <CheckIcon strokeColor="#FF0000" />
+  ```
+
 - `size` - This property overrides the `width` and `height` attributes on the
   SVG. The default is `24`.
 
