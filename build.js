@@ -20,6 +20,7 @@ function renderTemplate(title, svgPathData, name) {
   >
     <svg
       :fill="fillColor"
+      :stroke="strokeColor"
       class="material-design-icon__svg"
       :width="size"
       :height="size"
@@ -41,6 +42,10 @@ export default {
       default: null
     },
     fillColor: {
+      type: String,
+      default: 'currentColor'
+    },
+    strokeColor: {
       type: String,
       default: 'currentColor'
     },
