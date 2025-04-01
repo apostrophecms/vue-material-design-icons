@@ -19,7 +19,7 @@
   "author": "Apostrophe Technologies, Inc.",
   "license": "MIT",
   "devDependencies": {
-    "@mdi/js": "^5.9.55",
+    "@mdi/js": "^7.4.47",
     "eslint-config-apostrophe": "^4.3.0",
     "eslint-plugin-vue": "^9.22.0",
     "p-map": "^4.0.0"
